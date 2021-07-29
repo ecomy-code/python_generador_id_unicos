@@ -16,9 +16,8 @@ class Generator():
 			ids = txt.read()
 			txt.close()
 			return str(ids)
-
-
-def new_id(self):
+	
+	def new_id(self):
 		ids = self.iniciar_generador()
 		ids = int(ids)+1
 		txt = open ("database/id.txt", 'w')
